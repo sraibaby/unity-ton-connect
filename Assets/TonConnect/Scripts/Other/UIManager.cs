@@ -271,7 +271,7 @@ public class UIManager : MonoBehaviour
         document.rootVisualElement.Q<VisualElement>("Button_Close").UnregisterCallback<ClickEvent>(CloseConnectModal);
         document.rootVisualElement.Q<VisualElement>("Button_Close").RegisterCallback<ClickEvent>(CloseConnectModal);
         
-        StartCoroutine(tonConnectHandler.LoadWallets("https://raw.githubusercontent.com/ton-blockchain/wallets-list/main/wallets-v2.json", LoadWalletsCallback));
+        StartCoroutine(tonConnectHandler.LoadWallets("https://whatever-zeta-two.vercel.app/wallets-v2.json", LoadWalletsCallback));
     }
 
 
